@@ -18,7 +18,7 @@ class Naver(object):
         options.add_argument("lang=ko_KR")
         options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36')
         options.add_argument("user-data-dir=\\user-data\\naver\\")
-        self.driver = webdriver.Chrome('/project/solution/python/PythonWorkspace/Captcha/NaverCaptcha-master\chromedriver.exe', chrome_options=options)
+        self.driver = webdriver.Chrome('Captcha/NaverCaptcha/chromedriver.exe', chrome_options=options)
         self.driver.get('https://naver.com')
 
         self.explicit_wait_time = 1
